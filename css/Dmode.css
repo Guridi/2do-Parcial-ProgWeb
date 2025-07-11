@@ -1,0 +1,91 @@
+/* ------------- Paleta clara global ------------- */
+:root {
+  /* Colores base */
+  --bg:        #716666;  /* Fondo principal */
+  --fg:        #212529;  /* Texto principal */
+  --primary:   #0d6efd;  /* Azul Bootstrap */
+  --secondary: #6c757d;
+  --accent:    #ffc107;  /* Amarillo */
+  /* Superficies */
+  --surface-1: #f8f9fa;  /* Tarjetas, navbar */
+  --surface-2: #e9ecef;  /* Hover / resaltar */
+  /* Bordes y sombras */
+  --border:    rgba(0,0,0,.125);
+  --shadow:    0 0.5rem 1rem rgba(0,0,0,.15);
+
+  --nav-link:        #212529;  
+  --nav-link-hover:  #f00c0c; 
+}
+
+/* ----------- Paleta oscura (override) ---------- */
+.dark {
+  --bg:        #121212;
+  --fg:        #e1e1e1;
+  --primary:   #4dabf7;
+  --secondary: #9ca3af;   /* gris claro */
+  --accent:    #f1c40f;
+  --surface-1: #1e1e1e;
+  --surface-2: #2c2c2c;
+  --border:    rgba(255,255,255,.15);
+  --shadow:    0 0.5rem 1rem rgba(0,0,0,.4);
+    --nav-link:        #e1e1e1;
+    --nav-link-hover:  #f00c0c;
+}
+
+/* ------------- Aplicación de variables ---------- */
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  transition: background .3s ease, color .3s ease; /* suavidad */
+}
+
+/* Componentes genéricos */
+.navbar,
+.card,
+.modal-content {
+  background: var(--surface-1);
+  color: var(--fg);
+  box-shadow: var(--shadow);
+}
+
+.card:hover {
+  background: var(--surface-2);
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+hr, .border, .card, .modal-content {
+  border-color: var(--border)!important;
+}
+
+/* NavBar */
+.navbar .nav-link {
+  color: var(--nav-link) !important;           /* estado normal */
+  transition: color .2s ease-in-out;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--nav-link-hover) !important;     /* hover o activa */
+}
+
+.navbar-custom .nav-link {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+
+.navbar-brand {
+      font-size: 1.5rem;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+/*Footer*/
+footer {
+    margin-top: auto;    /* Empuja el footer al final */
+}

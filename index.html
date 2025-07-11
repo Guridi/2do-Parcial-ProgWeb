@@ -12,15 +12,18 @@
 
   <title>Battlezone Gaming Club</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
   <link rel="icon" href="images/BZ.png" type="image/png">
   <link rel="stylesheet" href="css/fixed_button.css"/>
-  <link rel="stylesheet" href="css/navbar.css"/>
-  <link rel="stylesheet" href="css/background.css"/>
   <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/Dmode.css"/>
+  <script src="js/DarkMode.js" type="text/javascript" defer></script>
 </head>
 
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
   <header>
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
       <div class="container-fluid">
@@ -31,9 +34,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="/pages/video.html">Video</a></li>
-            <li class="nav-item"><a class="nav-link" href="/pages/nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pages/noticias.html">Noticias</a></li>
             <li class="nav-item"><a class="nav-link" href="/pages/products.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pages/nosotros.html">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="/pages/contacts.html">Contactos</a></li>
+            
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="/pages/login.html">Login</a></li>
@@ -48,11 +53,9 @@
   <div class="container text-center mt-5">
     <h1>Bienvenido a Battlezone Gaming Club</h1>
     <p>Donde nacen los heroes</p>
-    <button class="btn btn-warning fixed-help-btn" 
-    data-bs-toggle="modal"
-    data-bs-target="#helpModal"
-    title="Ayuda">
-    <img src="/images/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).svg" />
+    <button id="theme-switch">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
     </button>
   </div>
 
@@ -80,6 +83,7 @@
       </div>
     </div>
   </div>
+<div class="container my-4">
 <div id="mainCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -98,6 +102,181 @@
   <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>   
+</div>
+</div>
+<div class="container my-5">
+
+  <h2 class="text-center mb-4">Productos destacados</h2>
+
+  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+      <!-- ======== SLIDE 1 ======== -->
+      <div class="carousel-item active">
+        <div class="row g-3">
+          <!-- Card 1 -->
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffbundle.webp" class="card-img-top" alt="FF Bundle">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Bundle Set</h6>
+                <p class="card-text small mb-2">$45.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/pkmn-etb.jpg" class="card-img-top" alt="Pokémon ETB">
+              <div class="card-body">
+                <h6 class="card-title mb-1">Pokémon ETB</h6>
+                <p class="card-text small mb-2">$55.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/mtg-playmat.jpg" class="card-img-top" alt="Playmat MTG">
+              <div class="card-body">
+                <h6 class="card-title mb-1">Playmat MTG</h6>
+                <p class="card-text small mb-2">$19.99</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div><!-- /carousel-item -->
+
+      <!-- ======== SLIDE 2 ======== -->
+      <div class="carousel-item">
+        <div class="row g-3">
+          <!-- Replique 4 tarjetas más (productos 5-8) -->
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ======== SLIDE 3 ======== -->
+      <div class="carousel-item">
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="card h-100 text-center">
+              <img src="images/productos/ffboosterbox.jpg" class="card-img-top" alt="FF Booster Box">
+              <div class="card-body">
+                <h6 class="card-title mb-1">FF Booster Box</h6>
+                <p class="card-text small mb-2">$110.00</p>
+                <a href="#" class="btn btn-primary btn-sm w-100">Añadir</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div><!-- /productCarousel -->
 </div>
 </main>
 <footer>

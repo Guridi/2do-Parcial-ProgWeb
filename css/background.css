@@ -1,6 +1,6 @@
  body {
-    background: linear-gradient(to right, #ff6f61, #6a0572);
-    color: white;
+    background: linear-gradient(to right, #ffffff, #cabebe);
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     min-height: 100vh;

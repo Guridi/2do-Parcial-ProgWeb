@@ -2,59 +2,205 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Pagina principal de Battlezone">
-  <meta name="keywords" content="mtg, dbs, magic, dragonball, pkmntcg, pokemon, tcg, trading, card, game">
-  <meta name="author" content="Antonio Guridi">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.battlezonegaming.com/">
-  <title>Productos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="description" content="Productos disponibles en BattleZone Gaming"/>
+  <meta name="keywords" content="mtg, dbs, magic, dragonball, pokemon, tcg, trading card game"/>
+  <meta name="author" content="Antonio Guridi"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.battlezonegaming.com/products.html"/>
+  <title>Productos | BattleZone Gaming</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
   <link rel="icon" href="../images/BZ.png" type="image/png">
-  <link rel="stylesheet" href="/css/navbar.css">
-  <link rel="stylesheet" href="/css/background.css"/>
+  <link rel="stylesheet" href="../css/Dmode.css"/>
+  <link rel="stylesheet" href="../css/fixed_button.css"/>
+  <script src="../js/DarkMode.js" type="text/javascript" defer></script>
+
+
 </head>
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../images/Logo-BZ.png"/></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
-              <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
-              <li class="nav-item"><a class="nav-link" href="contacts.html">Contactos</a></li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.html#pills-signup">Sign Up</a></li>
-            </ul>
+
+<body class="d-flex flex-column min-vh-100">
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../images/Logo-BZ.png"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+            <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Contactos</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+
+
+  <main class="flex-grow-1 py-5">
+    <button id="theme-switch">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+    </button>
+    <div class="container">
+      <h1 class="text-center mb-4">Productos disponibles</h1>
+      <!-- Grid responsive: 1 col en XS, 2 en SM, 3 en MD, 4 en LG+  con espacio g-4 -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/productos/ffboosterbox.jpg" class="card-img-top" alt="Final Fantasy Booster Box"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">FF TCG Booster Box</h5>
+              <p class="card-text">Caja sellada con 36 sobres. Set Opus XVI.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 8,500</span>
+            </div>
           </div>
         </div>
-    </nav>
-  </header>
-  <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="../images/productos/ffboosterbox.jpg" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div> <br>
+        <!-- Tarjeta 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/productos/ffbundle.webp" class="card-img-top" alt="Final Fantasy Bundle"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">FF Bundle</h5>
+              <p class="card-text">Incluye 8 sobres + accesorios.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 2,200</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+3" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pokémon Trainer Box</h5>
+              <p class="card-text">Elite Trainer Box – Scarlet & Violet.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 4,700</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+4" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dragon Ball Booster Box</h5>
+              <p class="card-text">Mythic Booster 24 sobres.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 7,900</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 5 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+5" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Magic Set Booster</h5>
+              <p class="card-text">Bloomburrow Set Booster Box.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 15,600</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 6 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+6" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sleeves Dragon Shield</h5>
+              <p class="card-text">Paquete de 100 fundas – Matte Black.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 550</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 7 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+7" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Deck Box Ultimate Guard</h5>
+              <p class="card-text">Modelo Boulder 100+ – Azul.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 950</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 8 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+8" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Playmat XXL</h5>
+              <p class="card-text">Playmat bordado edición limitada.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 1,800</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 9 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+9" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dados D20 Opacos</h5>
+              <p class="card-text">Set de 7 dados RPG.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 450</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 10 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+10" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Magic Commander Deck</h5>
+              <p class="card-text">Commander Masters – Eldrazi Unbound.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 9,200</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 11 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+11" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pokémon Booster Pack</h5>
+              <p class="card-text">Pack individual – Temporal Forces.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 300</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 12 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://placehold.co/400x400/png?text=Producto+12" class="card-img-top" alt="Producto genérico"/>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gift Card Digital</h5>
+              <p class="card-text">Crédito de RD$ 1,000 para usar en tienda.</p>
+              <span class="mt-auto fw-bold text-primary">RD$ 1,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="../images/productos/ffbundle.webp" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<footer>
-  <div class="container text-center">
-    <p class="mb-0">&copy; 2025 BattleZone Gaming. Todos los derechos reservados.</p>
-    <a href="politicas.html" target="_blank">Términos y condiciones</a>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="mt-auto py-3 bg-dark text-light">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 BattleZone Gaming. Todos los derechos reservados.</p>
+      <a href="politicas.html" target="_blank" class="link-light text-decoration-none">Términos y condiciones</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
